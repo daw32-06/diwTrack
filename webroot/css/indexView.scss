@@ -1,13 +1,43 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,500,500i,700,700i');
 body{
+    
+    font-family: 'Roboto', sans-serif;
     //display: flex;
     margin:0;
     padding: 0;
     background-image: url("../img/loginBG.jpg");
     background-size: auto;
+    //background-position: top center;
+}
+header{
+    height: 100%;
+    display: flex;
+    justify-content: flex-end;
+    padding: 0 10px;
+}
+button {
 
+    border-radius: 8px;
+    font-weight: bold;
+    margin:10px 5px;
+    padding: 8px 10px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1em;
+    &.signinBT{
+        background-color: #0A0;
+        border:0;
+        color:#fff;
+    }
+    &.signupBT{
+        background-color: #f00;
+        border:0;
+
+        color:#fff;
+    }
 }
 #signin
 {
+
     visibility: hidden;
     background-color: rgba(0,0,0,0.4);
     width:100%;
@@ -15,20 +45,31 @@ body{
     position:fixed;
     align-self: center;
     display: flex;
+    top:0px;
     align-items: center;
     justify-content: center;
 
 
     form{
-        display: flex;
+
         flex-direction: column;
         background-color: #fff;
         width:600px;
         height: 400px;
+
+        -webkit-box-shadow: 4px 4px 10px 0px rgba(0,0,0,0.6);
+        -moz-box-shadow: 4px 4px 10px 0px rgba(0,0,0,0.6);
+        box-shadow: 4px 4px 10px 0px rgba(0,0,0,0.6);
+
         border-radius:4px;
         justify-content: center;
         align-items: center;
-
+        .close{
+            position: relative;
+            width: 25px;
+            top:-10px;
+            left:585px;
+        }
     }
 }
 
@@ -39,6 +80,7 @@ body{
     width:100%;
     height: 100%;
     position:fixed;
+    top:0px;
     align-self: center;
     display: flex;
     align-items: center;
@@ -46,7 +88,9 @@ body{
 
 
     form{
-        display: flex;
+        -webkit-box-shadow: 4px 4px 10px 0px rgba(0,0,0,0.6);
+        -moz-box-shadow: 4px 4px 10px 0px rgba(0,0,0,0.6);
+        box-shadow: 4px 4px 10px 0px rgba(0,0,0,0.6);
         flex-direction: column;
         background-color: #fff;
         width:600px;
@@ -54,6 +98,12 @@ body{
         border-radius:4px;
         justify-content: center;
         align-items: center;
+        .close{
 
+            position: relative;
+            width: 25px;
+            top:-10px;
+            left:585px;
+        }
     }
 }
