@@ -74,7 +74,7 @@
                 <div class="close" onclick="closeRegistrarse()"><img width="25" height="25" src="webroot/img/close_btn.png"></div>
                 <div id="signupPaginas">
                     <div class="pagina" id="signupPaso1">
-                        <h1>Paso 1</h1>
+
                         <div class="campos">
                             <input type="text" name="usuario">
                             <div id="loginmsg"></div>
@@ -83,7 +83,6 @@
                     </div>
 
                     <div class="pagina" id="signupPaso2">
-                        <h1>Paso 2</h1>
                         <div class="campos">
                             <input type="text" name="usuario">
                             <div id="loginmsg"></div>
@@ -93,7 +92,7 @@
                     </div>
 
                     <div class="pagina" id="signupPaso3">
-                        <h1>Paso 3</h1>
+
                         <div class="campos">
                             <input type="text" name="usuario">
                             <div id="loginmsg"></div>
@@ -103,12 +102,11 @@
                     </div>
 
                     <div class="pagina" id="signupPaso4">
-                        <h1>Paso 4</h1>
                         <div class="campos">
                             <input type="text" name="usuario">
                             <div id="loginmsg"></div>
-                            <span class="boton atras"onclick="signUpAtras()">Atras</span>
-                            <span class="boton">Finalizar</span>
+                            <span class="boton anterior"onclick="signUpAtras()">Atras</span>
+                            <span class="boton siguiente">Finalizar</span>
                         </div>
                     </div>
                 </div>
