@@ -25,6 +25,15 @@
         {
             document.getElementById('signin').style.visibility="hidden";
         }
+
+        function signUpSiguiente()
+        {
+            document.getElementById('signupPaginas').style.left=document.getElementById('signupPaginas').offsetLeft-600+"px"
+        }
+        function signUpAtras()
+        {
+            document.getElementById('signupPaginas').style.left=document.getElementById('signupPaginas').offsetLeft+600+"px"
+        }
     </script>
 </head>
 <body>
@@ -33,22 +42,18 @@
         <span id="botonesHeader">    <button class="signinBT" onclick="identificarse()">Identificate</button><button class="signupBT" onclick="registrarse()">Regístrate Gratis</button></span>
     </header>
 
-    <!-- Ventanas de registro e inicio de sesion -->
+    <!-- Ventana de inicio de sesion -->
     <div id="signin">
         <div id="signinVentana">
             <form>
-
                 <div class="close" onclick="closeIdentificarse()"><img width="25" height="25" src="webroot/img/close_btn.png"></div>
-                <div id="campos">
+                <div class="campos">
                     <h1>Inicia sesion</h1>
                     <div class="social">Redes sociales<br>
-
-                            <img src="https://facebookbrand.com/wp-content/themes/fb-branding/prj-fb-branding/assets/images/fb-art.png" alt="facebook" height="40px" width="40px">
+                        <img src="https://facebookbrand.com/wp-content/themes/fb-branding/prj-fb-branding/assets/images/fb-art.png" alt="facebook" height="40px" width="40px">
                         <img src="http://iconbug.com/data/2f/512/7090d90b6a06b0ca3d948bcea9e676f9.png" alt="google" height="40px" width="40px">
                         <img src="https://edubloxtutor.com/wp-content/uploads/2016/11/twitter-3-xxl.png" alt="twitter" height="40px" width="40px">
-
                     </div>
-
                     O inicia sesion con tu usuario y contraseña
                     <input type="text" placeholder="Usuario" name="usuario">
 
@@ -59,27 +64,62 @@
             </form>
         </div>
     </div>
+
+
+
+    <!-- Ventana de registro -->
     <div id="signup">
         <div id="signupVentana">
             <form>
                 <div class="close" onclick="closeRegistrarse()"><img width="25" height="25" src="webroot/img/close_btn.png"></div>
-                <input type="text" name="usuario">
-                <br>
-                <div id="campos">
-                    <input type="text" name="password">
-                    <input type="text" name="password">
-                    <input type="text" name="password">
-                    <input type="text" name="password">
-                    <input type="text" name="password">
-                    <input type="text" name="password">
-                    <div id="loginmsg"></div>
-                    <button>ENTRAR</button>
+                <div id="signupPaginas">
+                    <div class="pagina" id="signupPaso1">
+                        <h1>Paso 1</h1>
+                        <div class="campos">
+                            <input type="text" name="usuario">
+                            <div id="loginmsg"></div>
+                            <span class="boton siguiente" onclick="signUpSiguiente()">Siguiente</span>
+                        </div>
+                    </div>
+
+                    <div class="pagina" id="signupPaso2">
+                        <h1>Paso 2</h1>
+                        <div class="campos">
+                            <input type="text" name="usuario">
+                            <div id="loginmsg"></div>
+                            <span class="boton anterior" onclick="signUpAtras()">Atras</span>
+                            <span class="boton siguiente" onclick="signUpSiguiente()">Siguiente</span>
+                        </div>
+                    </div>
+
+                    <div class="pagina" id="signupPaso3">
+                        <h1>Paso 3</h1>
+                        <div class="campos">
+                            <input type="text" name="usuario">
+                            <div id="loginmsg"></div>
+                            <span class="boton anterior"onclick="signUpAtras()">Atras</span>
+                            <span class="boton siguiente"onclick="signUpSiguiente()">Siguiente</span>
+                        </div>
+                    </div>
+
+                    <div class="pagina" id="signupPaso4">
+                        <h1>Paso 4</h1>
+                        <div class="campos">
+                            <input type="text" name="usuario">
+                            <div id="loginmsg"></div>
+                            <span class="boton atras"onclick="signUpAtras()">Atras</span>
+                            <span class="boton">Finalizar</span>
+                        </div>
+                    </div>
                 </div>
             </form>
         </div>
     </div>
 
 
+
+
+    <!-- Contenido de la pagina -->
     <div id="centrado">
         <div id="bloque1">
             <div>
@@ -104,9 +144,7 @@
             <div>
                 <img src="webroot/img/nexus5.png" height="600">
             </div>
-
         </div>
-
     </div>
 
 </body>

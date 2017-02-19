@@ -134,7 +134,7 @@ input[type=text]:focus{
             top:-10px;
             height: 100%;
         }
-        #campos{
+        .campos{
 
             height: 90%;
             display: flex;
@@ -173,12 +173,55 @@ input[type=text]:focus{
         justify-content: center;
         align-items: center;
         .close{
-
             position: relative;
             width: 25px;
             top:-10px;
             left:585px;
         }
+        position: relative;
+        overflow: hidden;
+        #signupPaginas
+        {
+            width:2400px;
+            height: 350px;
+
+            display: flex;
+            flex-direction: row;
+            position:absolute;
+
+        }
+        .pagina {
+            width: 600px;
+            height: 350px;
+            .boton{
+                border:solid 1px #000;
+                padding: 5px;
+                margin: 5px;
+            }
+            .anterior{
+
+            }
+            .siguiente{
+
+            }
+        }
+        #signupPaso1
+        {
+
+        }
+        #signupPaso2
+        {
+
+        }
+        #signupPaso3
+        {
+
+        }
+        #signupPaso4
+        {
+
+        }
+
     }
 }
 
