@@ -33,10 +33,6 @@
         <span id="botonesHeader">    <button class="signinBT" onclick="identificarse()">Identificate</button><button class="signupBT" onclick="registrarse()">Regístrate Gratis</button></span>
     </header>
 
-
-
-
-
     <!-- Ventanas de registro e inicio de sesion -->
     <div id="signin">
         <div id="signinVentana">
@@ -83,6 +79,35 @@
         </div>
     </div>
 
+
+    <div id="centrado">
+        <div id="bloque1">
+            <div>
+            <h2>Ponte en forma y rompe tus limites.</h2>
+            <ul>
+                <li>Personalice distintas zonas de frecuencia cardíaca.</li>
+                <li>Seleccione el tipo de corredor</li>
+                    <ul>
+                        <li>Corredor casual</li>
+                        <li>Corredor de medio fondo</li>
+                        <li>Corredor de fondo</li>
+                        <li>Corredor de trail</li>
+                    </ul>
+                </li>
+                <li>Pongase metas</li>
+                <li>Visualice sus rutas y estadisticas</li>
+                <li>Comparta sus logros en las redes sociales</li>
+            </ul>
+            <div id="markets"><img src="webroot/img/google-play.png" width="150px"> <img src="webroot/img/app-store.png" width="150px"></div>
+
+            </div>
+            <div>
+                <img src="webroot/img/nexus5.png" height="600">
+            </div>
+
+        </div>
+
+    </div>
 
 </body>
 </html>
