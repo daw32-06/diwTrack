@@ -141,6 +141,7 @@ input[type=text]:focus{
             justify-content: center;
             align-items: center;
             flex-direction: column;
+
         }
     }
 }
@@ -180,6 +181,7 @@ input[type=text]:focus{
             top:-10px;
             left:585px;
         }
+
         position: relative;
         overflow: hidden;
         #signupPaginas
@@ -187,7 +189,7 @@ input[type=text]:focus{
 
             width:2400px;
             height: 400px;
-            
+
             display: flex;
             flex-direction: row;
             position:absolute;
@@ -198,6 +200,15 @@ input[type=text]:focus{
             width: 600px;
             height: 350px;
             padding-top: 90px;
+            .campos{
+                height: 90%;
+                //display: inline-block;
+                text-align: center;
+
+                input{
+                    margin:10px;
+                }
+            }
             .boton{
                 border-radius: 8px;
                 font-weight: bold;

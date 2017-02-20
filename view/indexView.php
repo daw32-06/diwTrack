@@ -76,7 +76,20 @@
                     <div class="pagina" id="signupPaso1">
 
                         <div class="campos">
-                            <input type="text" name="usuario">
+
+                            <p><b>Registro:</b> Cuéntanos algo sobre tí</p>
+                            <input type="text" name="usuario" placeholder="Nombre de usuario">
+                            <br>
+                            <input type="text" name="password" placeholder="Contraseña">
+                            <br>
+                            <input type="text" name="password2" placeholder="Repetir contraseña">
+                            <br>
+                            <input type="text" name="nombreCompleto" placeholder="Nombre y apellidos">
+                            <br>
+                            <input type="text" name="fechaNac" placeholder="Selector de fecha">
+                            <br>
+
+
                             <div id="loginmsg"></div>
                             <span class="boton siguiente" onclick="signUpSiguiente()">Siguiente</span>
                         </div>
@@ -84,6 +97,7 @@
 
                     <div class="pagina" id="signupPaso2">
                         <div class="campos">
+
                             <input type="text" name="usuario">
                             <div id="loginmsg"></div>
                             <span class="boton anterior" onclick="signUpAtras()">Atras</span>
