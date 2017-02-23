@@ -3,7 +3,7 @@
 body, html{
     margin:0;
     padding:0;
-    
+
 }
 body{
     font-family: 'Roboto', sans-serif;
@@ -97,6 +97,11 @@ input[type=text]:focus{
     border-bottom: solid 1px #00f;
 }
 
+input[type="range"]{
+    border:solid 1px #f00;
+    background: #0f0;
+}
+
 // Este es el conjunto del fondo y la ventana de login
 #signin
 {
@@ -162,7 +167,31 @@ input[type=text]:focus{
     form {
         height: 100%;
     }
+    .range{
+        
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    // Margen para añadir el boton de cerrar
+    #margenRegistro{
 
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+    }
+
+    .close{
+
+        position: absolute;;
+        width: 25px;
+        height: 20px;
+        top:-10px;
+        left:585px;
+        z-index: 50;
+    }
     #signupVentana{
 
         -webkit-box-shadow: 4px 4px 10px 0px rgba(0,0,0,0.6);
@@ -175,16 +204,12 @@ input[type=text]:focus{
         border-radius:4px;
         justify-content: center;
         align-items: center;
-        .close{
-            position: relative;
-            width: 25px;
-            height: 20px;
-            top:-10px;
-            left:585px;
-        }
+
 
         position: relative;
         overflow: hidden;
+
+
         #signupPaginas
         {
 
