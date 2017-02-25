@@ -96,18 +96,24 @@ input[type="text"], input[type="password"]{
     width: 250px;
     margin: 10px;
 }
-
+input[type=range]
+{
+    margin:0;
+}
 input[type=text]:focus, input[type=password]:focus{
     border:none;
       outline: none;
     border-bottom: solid 1px #00f;
 }
 
-input[type="range"]{
-    border:solid 1px #f00;
-    background: #0f0;
-}
 
+select {
+    border-radius: 10px;
+    background-color: #fff;
+    font-family: 'Roboto';
+
+   padding: 10px;
+}
 // Este es el conjunto del fondo y la ventana de login
 #signin
 {
@@ -206,7 +212,7 @@ input[type="range"]{
         flex-direction: column;
         background-color: #fff;
         width:600px;
-        height: 500px;
+        height: 550px; /**************************************500**/
         border-radius:4px;
         justify-content: center;
         align-items: center;
@@ -219,7 +225,7 @@ input[type="range"]{
             position: absolute;
             width: 600px;
 
-            top: 450px;
+            top: 500px;
             margin-right: auto;
             margin-left: auto;
         }
@@ -246,6 +252,11 @@ input[type="range"]{
                 input{
                     margin:10px;
                 }
+                input[type="range"]{
+                    margin: 8px;
+                    //padding:0;
+                }
+
 
             }
             .boton{
@@ -287,6 +298,19 @@ input[type="range"]{
             background-image:url("../img/paso3.png");
             background-position: top;
             background-repeat: no-repeat;
+            #camposCasual{
+            }
+
+            #camposMedioFondo{
+                display: none;
+            }
+            #camposFondo{
+                display: none;
+            }
+            #camposTrail{
+
+                display: none;
+            }
         }
         #signupPaso4
         {
