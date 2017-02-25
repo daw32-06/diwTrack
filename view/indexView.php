@@ -6,7 +6,9 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="webroot/css/indexView.min.css">
     <link rel="shortcut icon" type="image/ico" href="webroot/img/favicon.ico" />
+    <link rel="stylesheet" href="webroot/font/flaticon.css">
     <title>DiwTrack</title>
+
 
     <script>
         function registrarse()

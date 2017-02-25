@@ -82,6 +82,12 @@ button {
         color:#fff;
     }
 }
+.campo{
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+}
 input[type="text"], input[type="password"]{
 
     border:0;
@@ -91,7 +97,7 @@ input[type="text"], input[type="password"]{
     margin: 10px;
 }
 
-input[type=text]:focus{
+input[type=text]:focus, input[type=password]:focus{
     border:none;
       outline: none;
     border-bottom: solid 1px #00f;
@@ -168,7 +174,7 @@ input[type="range"]{
         height: 100%;
     }
     .range{
-        
+
         display: flex;
         justify-content: center;
         align-items: center;
@@ -209,7 +215,14 @@ input[type="range"]{
         position: relative;
         overflow: hidden;
 
+        .botones{
+            position: absolute;
+            width: 600px;
 
+            top: 450px;
+            margin-right: auto;
+            margin-left: auto;
+        }
         #signupPaginas
         {
 
@@ -227,15 +240,16 @@ input[type="range"]{
             height: 350px;
             padding-top: 90px;
             .campos{
-                height: 90%;
-                //display: inline-block;
+
                 text-align: center;
 
                 input{
                     margin:10px;
                 }
+
             }
             .boton{
+                cursor:default;
                 border-radius: 8px;
                 font-weight: bold;
                 margin:10px 5px;

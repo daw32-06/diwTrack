@@ -10,9 +10,10 @@
                     <img src="https://edubloxtutor.com/wp-content/uploads/2016/11/twitter-3-xxl.png" alt="twitter" height="40px" width="40px">
                 </div>
                 O inicia sesion con tu usuario y contraseña
-                <input type="text" placeholder="Usuario" name="usuario">
-
-                <input type="text" placeholder="Password"name="password">
+                <div class="campo"><span class="flaticon-man-user"></span><input type="text" name="usuario" placeholder="Nombre de usuario"></div>
+                <br>
+                <div class="campo"><span class="flaticon-padlock"></span><input type="password" name="password" placeholder="Contraseña"></div>
+                <br>
                 <div id="loginmsg"></div>
                 <button>ENTRAR</button>
             </div>
