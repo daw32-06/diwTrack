@@ -15,7 +15,7 @@
                 <div class="campo"><span class="flaticon-padlock"></span><input type="password" name="password" placeholder="Contraseña"></div>
                 <br>
                 <div id="loginmsg"></div>
-                <button>ENTRAR</button>
+                <a href="mainViewPreview.php"><span class="boton siguiente" onclick="">ENTRAR</span></a>
             </div>
         </form>
     </div>

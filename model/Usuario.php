@@ -16,11 +16,6 @@ class Usuario
     protected $peso;
     protected $sexo;
     protected $tipoCorredor;
-    protected $freqMin;
-    protected $freqSprint;
-    protected $freqVelocidad;
-    protected $freqCardio;
-    protected $freqFitness;
     protected $cmf5km;
     protected $cmf10km;
     protected $cmfMediaMaraton;
@@ -43,7 +38,7 @@ class Usuario
     /**
      * Constructor
      */
-    public function __construct($username, $password, $email, $nombreApellidos, $fechaNac, $estatura, $peso, $sexo, $tipoCorredor, $freqMin, $freqSprint, $freqVelocidad, $freqCardio, $freqFitness, $cmf5km, $cmf10km, $cmfMediaMaraton, $cfMejorMarca, $cfMejorMaraton, $ctNombre, $cfDistancia,$ctDesnivel,$ctTiempo,$metaCalorias,$metaDistancia,$freqMinima,$freqSencillo,$freqCardio,$freqFitness,$freqVelocidad,$freqSprint)
+    public function __construct($username, $password, $email, $nombreApellidos, $fechaNac, $estatura, $peso, $sexo, $tipoCorredor, $cmf5km, $cmf10km, $cmfMediaMaraton, $cfMejorMarca, $cfMejorMaraton, $ctNombre, $cfDistancia,$ctDesnivel,$ctTiempo,$metaCalorias,$metaDistancia,$freqMinima,$freqSencillo,$freqCardio,$freqFitness,$freqVelocidad,$freqSprint)
     {
         $this->username=$username;
         $this->password=$password;
@@ -54,11 +49,6 @@ class Usuario
         $this->peso=$peso;
         $this->sexo=$sexo;
         $this->tipoCorredor=$tipoCorredor;
-        $this->freqMin=$freqMin;
-        $this->freqSprint=$freqSprint;
-        $this->freqVelocidad=$freqVelocidad;
-        $this->freqCardio=$freqCardio;
-        $this->freqFitness=$freqFitness;
         $this->cmf5km=$cmf5km;
         $this->cmf10km=$cmf10km;
         $this->cmfMediaMaraton=$cmfMediaMaraton;
