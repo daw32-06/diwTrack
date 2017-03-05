@@ -7,7 +7,7 @@ body, html{
     height: 100%;
     position: absolute;
     font-family: 'Roboto';
-
+    min-height: 670px;
 }
 
 #menuizq {
@@ -26,6 +26,7 @@ body, html{
     -webkit-box-shadow: 2px 0px 6px 0px rgba(0,0,0,0.63);
     -moz-box-shadow: 2px 0px 6px 0px rgba(0,0,0,0.63);
     box-shadow: 2px 0px 6px 0px rgba(0,0,0,0.63);
+    min-height: 670px;
     #closeIzq{
         position:absolute;
         right: 5px;
@@ -33,6 +34,53 @@ body, html{
         font-size: 2em;
         padding: 0;
         margin: 0;
+        cursor:default;
+
+    }
+
+    #usuarioElem{
+        margin-top: 50px;
+        #fotoUsuario{
+            margin: 10px;
+        }
+        #nombreUsuario{
+
+        }
+        #calendario {
+            margin: 15px;
+        }
+        #opciones{
+            ul{
+                color:#898989;
+                margin: 0;
+                padding: 0;
+                img{
+                    margin-right: 10px;
+                }
+                li:first-child
+                {
+                    border-top: solid 1px #CECECE;
+                }
+                li{
+                    font-size: 1.1em;
+                    text-align: left;
+                    list-style: none;
+                    display: flex;
+                    align-items: center;
+                    height: 50px;
+                    border-bottom: solid 1px #CECECE;
+                    padding-left: 50px;
+                }
+            }
+        }
+
+        #pie{
+            position: absolute;
+            color:#aaa;
+            width: 100%;
+            bottom: 10px;
+        }
+
 
     }
 
@@ -47,7 +95,7 @@ body, html{
     -webkit-box-shadow: -2px 0px 6px 0px rgba(0,0,0,0.63);
     -moz-box-shadow: -2px 0px 6px 0px rgba(0,0,0,0.63);
     box-shadow: -2px 0px 6px 0px rgba(0,0,0,0.63);
-
+    min-height: 670px;
     background-color: #2a314e;
     position: fixed;
     top:0;
@@ -59,6 +107,25 @@ body, html{
     color:#fff;
     z-index: 200;
 
+    #fechaTrack{
+        margin-top:45px;
+        text-shadow: 2px 2px 2px #000;
+        font-size: 1.4em;
+    }
+    #descTrack{
+        font-size: 0.8em;
+    }
+
+    #closeDer{
+        position:absolute;
+        right: 8px;
+        top:0px;
+        font-size: 25px;
+        padding: 0;
+        margin: 0;
+        cursor:default;
+
+    }
     .leyenda{
        width: 150px;
        padding: 5px;
@@ -67,7 +134,27 @@ body, html{
        img{
            margin-right: 10px;
        }
-   }
+       sup{
+           margin-left: 5px;
+           position: relative;
+           font-size: 0.7em;
+           top:-0.3em;
+       }
+       sub{
+           position: relative;
+           font-size: 0.7em;
+           bottom:-0.4em;
+       }
+    }
+    #share{
+        position: absolute;
+        bottom: 30px;
+        display: flex;
+        justify-content: center;
+        img{
+            padding: 10px;
+        }
+    }
 }
 
 
@@ -81,7 +168,6 @@ header{
     border-bottom: 1px #ccc solid;
     #titulo{
 
-
         height: 100%;
         display: flex;
         justify-content: center;
@@ -90,6 +176,11 @@ header{
         font-weight: bold;
         font-family: 'Righteous', cursive;
 
+    }
+    #botonUsuario{
+        position:absolute;
+        top:15px;
+        left:20px;
     }
 }
 
@@ -110,22 +201,18 @@ header{
 
 }
 
+
 #graficaH{
     bottom: 10px;
     //border:solid 1px #f00;
-    left:20%;
+    left:25%;
     position:absolute;
-    width: 60%;
+    width: 50%;
 }
+
 #botonDetalle{
     position:absolute;
     top:20px;
     right:20px;
-
-}
-#botonUsuario{
-    position:absolute;
-    top:10px;
-    left:20px;
 
 }
