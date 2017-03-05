@@ -5,13 +5,13 @@
     *   @author Juan José Rubio Iglesias
     */
 
-    include_once("view/indexView.php");
+    //include_once("view/indexView.php");
 
     // Iniciamos la sesion
-    //session_start();
+    session_start();
 
     // Incluimos la libreria que controla las sesiones
-    //include_once("controller/sessionController.php");
+    include_once("controller/sessionController.php");
 
     /**
     * Comprobamos si la session esta iniciada llamando al SessionController::logueado
@@ -19,7 +19,9 @@
     * principal o en funcion del parametro 'location'
     **/
 
-    /*if(SessionController::logueado())
+
+
+    if(SessionController::logueado())
     {
         if(isset($_GET['location']))
         {
@@ -33,7 +35,7 @@
             {
                 echo "logoff";
                 sessionController::cerrarSesion();
-                $controlador = "controller/loginController.php";
+                $controlador = "controller/indexController.php";
             }
 
             // Comprobamos si NO existe el controlador existe el controlador principal sera el principal
@@ -46,10 +48,19 @@
         }
     }else{
         // Si no hemos iniciado sesion indicamos que el controlador sera  el login
-        $controlador = "controller/loginController.php";
+        $controlador = "controller/indexController.php";
     }
+
+    if(isset($_GET['location']))
+    {
+        if($_GET['location']=="debug")
+        {
+            $controlador = "debug/testUsuario.php";
+        }
+    }
+
 
     // Cargamos el controlador
     include $controlador;
-    */
+
 ?>

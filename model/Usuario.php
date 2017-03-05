@@ -1,4 +1,6 @@
 <?php
+include_once('UsuarioPDO.php');
+
 /**
  * Clase usuario
  * @author Juan José Rubio Iglesias
@@ -92,5 +94,56 @@ class Usuario
         {
             $this->$property = $value;
         }
+    }
+
+
+    /** FUNCIONES BBDD **/
+
+
+    /**
+    * Funcion que llama a UsuarioPDO para validar el usuario
+    * @param String $codUsuario : Codigo del usuario
+    * @param String $password : Contraseña del usuario
+    * @return array[String] : Array del usuario
+    **/
+    public static function validarUsuario($username,$password)
+    {
+        //Inicializamos objUsuario
+        $objUsuario = null;
+        //Consultamos que el usuario existe
+        $arrayUsuarios = UsuarioPDO::validarUsuario($username,$password);
+        //Si el array de usuarios contiene algun usuario instancia el objUsuario;
+        if($arrayUsuarios){
+            $objUsuario = new Usuario(
+                $username,
+                $password,
+                $arrayUsuarios['email'],
+                $arrayUsuarios['nombreApellidos'],
+                $arrayUsuarios['fechaNac'],
+                $arrayUsuarios['estatura'],
+                $arrayUsuarios['peso'],
+                $arrayUsuarios['sexo'],
+                $arrayUsuarios['tipoCorredor'],
+                $arrayUsuarios['cmf5km'],
+                $arrayUsuarios['cmf10km'],
+                $arrayUsuarios['cmfMediaMaraton'],
+                $arrayUsuarios['cfMejorMarca'],
+                $arrayUsuarios['cfMejorMaraton'],
+                $arrayUsuarios['ctNombre'],
+                $arrayUsuarios['cfDistancia'],
+                $arrayUsuarios['ctDesnivel'],
+                $arrayUsuarios['ctTiempo'],
+                $arrayUsuarios['metaCalorias'],
+                $arrayUsuarios['metaDistancia'],
+                $arrayUsuarios['freqMinima'],
+                $arrayUsuarios['freqSencillo'],
+                $arrayUsuarios['freqCardio'],
+                $arrayUsuarios['freqFitness'],
+                $arrayUsuarios['freqVelocidad'],
+                $arrayUsuarios['freqSprint']
+            );
+        }
+        //Devolvemos el objeto usuario
+        return $objUsuario;
     }
 }

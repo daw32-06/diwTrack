@@ -163,7 +163,26 @@ select {
         }
     }
 }
+.boton{
+    cursor:default;
+    border-radius: 8px;
+    font-weight: bold;
+    margin:10px 5px;
+    padding: 8px 10px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1em;
+    &.siguiente{
+        background-color: #0A0;
+        border:0;
+        color:#fff;
+    }
+    &.anterior{
+        background-color: #f00;
+        border:0;
 
+        color:#fff;
+    }
+}
 #signup
 {
     visibility: hidden;
@@ -260,26 +279,7 @@ select {
 
 
             }
-            .boton{
-                cursor:default;
-                border-radius: 8px;
-                font-weight: bold;
-                margin:10px 5px;
-                padding: 8px 10px;
-                font-family: 'Roboto', sans-serif;
-                font-size: 1em;
-                &.siguiente{
-                    background-color: #0A0;
-                    border:0;
-                    color:#fff;
-                }
-                &.anterior{
-                    background-color: #f00;
-                    border:0;
 
-                    color:#fff;
-                }
-            }
 
         }
         #signupPaso1
