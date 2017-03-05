@@ -55,7 +55,7 @@
     {
         if($_GET['location']=="debug")
         {
-            $controlador = "debug/testUsuario.php";
+            $controlador = "debug/debug.php";
         }
     }
 
