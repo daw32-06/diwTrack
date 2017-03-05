@@ -69,7 +69,8 @@ ob_start();
 
                     <div class="botones" style="text-align:center;">
                         <input type="submit" class="boton siguiente"  value="Entrar" name="signin">
-                        <div class="boton siguiente" onclick="window.location='mainViewPreview.php'">¿Eres Victor? Entra por aquí</div>
+                        <div>Usuario: heraclio Password: paso </div>
+                        <!--<div class="boton siguiente" onclick="window.location='mainViewPreview.php'">¿Eres Victor? Entra por aquí</div>-->
                     </div>
 
                 </div>

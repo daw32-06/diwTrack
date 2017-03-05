@@ -1,9 +1,15 @@
 <?php
 
+$usuario = $_SESSION['usuario'];
+
+
+include_once("view/mainView.php");
+
+
+/*
 echo "Main controller!";
 
 print_r($_SESSION['usuario']);
-
+*/
 
 ?>
-<a href="index.php?location=logoff">Cerrar sesion</a>

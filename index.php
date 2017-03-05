@@ -5,11 +5,12 @@
     *   @author Juan José Rubio Iglesias
     */
 
-
+    include("model/Usuario.php");
     // Iniciamos la sesion
     session_start();
 
     // Incluimos la libreria que controla las sesiones
+
     include_once("controller/sessionController.php");
 
     /**

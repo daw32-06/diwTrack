@@ -1,3 +1,6 @@
+<?php
+
+?>
 <!DOCTYPE html>
 <!-- saved from url=(0050)https://develop.tallernt.es/graficasCirculares.htm -->
 <html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
@@ -172,7 +175,7 @@
 
         <div id="usuarioElem">
             <img id="fotoUsuario" src="webroot/img/user.png">
-            <div id="nombreUsuario">Nombre Completo</div>
+            <div id="nombreUsuario"><?php echo $usuario->__get("nombreApellidos"); ?></div>
             <!-- Calendario https://bootstrap-datepicker.readthedocs.io/en/latest/ -->
             <div id="calendario"><img src="webroot/img/calendarPreview.png"></div>
             <div id="opciones">

@@ -57,20 +57,30 @@ body, html{
                 img{
                     margin-right: 10px;
                 }
-                li:first-child
-                {
+                a{
+                    text-decoration: none;
+                    color:#898989;
+                    border: 0;
+                    //border-bottom: solid 1px #CECECE;
+                }
+                .op{
                     border-top: solid 1px #CECECE;
                 }
+                .op:last-child {
+                    border-bottom: solid 1px #cecece;
+                }
                 li{
+
                     font-size: 1.1em;
                     text-align: left;
                     list-style: none;
                     display: flex;
                     align-items: center;
                     height: 50px;
-                    border-bottom: solid 1px #CECECE;
+
                     padding-left: 50px;
                 }
+
             }
         }
 
