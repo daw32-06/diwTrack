@@ -24,7 +24,7 @@
             $query = "select * from usuario where username=? AND password=?";
             // Ejecutamos la consulta preparada y la guardamos en el $resultSet
             $resultSet=DBPDO::ejecutarConsulta($query,[$username,$password]);
-            if($_GET['location']=='debug')
+            /*if($_GET['location']=='debug')
             {
                 echo "<hr>";
                 echo "Debug UsuarioPDO.php<br>";
@@ -34,7 +34,7 @@
                 echo 'gettype($resultSet)='.gettype($resultSet)."<br>";
                 echo '$resultSet='.print_r($resultSet);
                 echo "<hr>";
-            }
+            }*/
             // Comprobamos cuantos usuarios se han devuelto
             // Si la consulta devuelve null
             if(!$resultSet)
@@ -45,7 +45,6 @@
             {
                 // Guardamos el objeto de cada fila en $usuario
                 $usuario = $resultSet->fetchObject();
-                print_r($usuario);
 
                 $arrayUsuario['username']=$usuario->username;
                 $arrayUsuario['password']=$usuario->password;

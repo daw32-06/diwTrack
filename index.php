@@ -5,7 +5,6 @@
     *   @author Juan José Rubio Iglesias
     */
 
-    //include_once("view/indexView.php");
 
     // Iniciamos la sesion
     session_start();
@@ -18,8 +17,6 @@
     * si devuelve verdadero es que la sesion esta iniciada y nos carga el controlador
     * principal o en funcion del parametro 'location'
     **/
-
-
 
     if(SessionController::logueado())
     {
@@ -62,5 +59,3 @@
 
     // Cargamos el controlador
     include $controlador;
-
-?>

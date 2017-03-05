@@ -10,22 +10,17 @@
         // Con este metodo comprobamos si la sesion esta iniciada
         public static function logueado()
         {
-            $r = false;
-            if(isset($_SESSION['usuario']) && isset($_SESSION['appId']))
+            if(isset($_SESSION['usuario']))
             {
-                if($_SESSION['appId']=="diwTrack")
-                {
-                    $r = true;
-                }
+                return true;
             }else{
-                $r = false;
+                return false;
             }
-            return $r;
         }
         // Con este metodo destruimos la sesion y volvemos al login
         public static function cerrarSesion()
         {
             session_destroy();
-            header('Location: index.php?location=indexView.php');
+            header('Location: index.php');
         }
     }
