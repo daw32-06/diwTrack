@@ -6,6 +6,12 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>DiwTrack</title>
     <link rel="shortcut icon" type="image/ico" href="webroot/img/favicon.ico" />
+
+    <!--Bootstrap para el calendario  https://bootstrap-datepicker.readthedocs.io/en/latest/ -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+    <!-- jQuery -->
     <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
     <script>
 
@@ -159,6 +165,20 @@
     <!-- ESTAS NOTAS SE DEBEN DE BORRAR EN LA VERSION FINAL -->
     <div id="notasPreview" style="position: fixed; z-index: 22; box-shadow: 4px 4px 2px #888888;padding:5px;right: 320px; background-color: #ff0; border:solid 1px #555; height:200px; width:250px; top:120px;">
         <div style="width:100%; text-align:center;"><b>Notas desarrollo</b></div>
+
+
+        <div class="input-group date" data-provide="datepicker">
+            <input type="text" class="form-control">
+            <div class="input-group-addon">
+                <span class="glyphicon glyphicon-th"></span>
+            </div>
+        </div>
+
+
+
+
+
+
         <ul style=" padding-left:25px;">
 
             <li>El calendario es de prueba </li>
