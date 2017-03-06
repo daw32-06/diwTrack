@@ -1,6 +1,9 @@
 # diwTrack
 > Autor: Juan Jose Rubio Iglesias
 
+*Accesos desde el instituto*
+http://192.168.20.19/DAW206/public_html/diw/diwTrack
+
 *Ponte en forma y rompe tus limites.*
 
 **diwTrack** es un servicio web que te permite realizar un seguimiento de tus entrenamientos en tiempo real.
