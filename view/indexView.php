@@ -13,6 +13,33 @@ ob_start();
     <title>DiwTrack</title>
 
 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+    <script>
+        //Comprobamos que la pagina esta cargada por completo
+        $(document).ready(function(){
+
+
+            $('#loginUsername').focusout(function(){
+                //console.log($('#inputOnChange').val());
+                var peticion = "usuarioWS.php?username="+$('#loginUsername').val();
+                console.log(peticion);
+                $.ajax({url:peticion,success:function(result){
+                    $("#foto").html("<img src='webroot/img/userphoto/"+result+"'>");
+                }});
+                $.ajax({url:peticion,error:function(result){
+                    $("#foto").html("<img src='webroot/img/user.png'>");
+                }});
+            });
+
+        });
+
+    </script>
+
+
+
+
+
     <script>
         function registrarse()
         {
@@ -61,7 +88,7 @@ ob_start();
                         <img src="https://edubloxtutor.com/wp-content/uploads/2016/11/twitter-3-xxl.png" alt="twitter" height="40px" width="40px">
                     </div>-->
                     <div id="foto"><img src="webroot/img/user.png"></div>
-                    <div class="campo"><span class="flaticon-man-user"></span><input type="text" name="username" placeholder="Nombre de usuario"></div>
+                    <div class="campo"><span class="flaticon-man-user"></span><input id="loginUsername" type="text" name="username" placeholder="Nombre de usuario"></div>
                     <br>
                     <div class="campo"><span class="flaticon-padlock"></span><input type="password" name="password" placeholder="Contraseña"></div>
                     <br>

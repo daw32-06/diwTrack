@@ -17,6 +17,32 @@
         * @param String $password : Contraseña del usuario
         * @return array[String] : Array del usuario
         **/
+
+        public static function getFotoUsuario($username)
+        {
+            // Inicializamos el $arrayUsuario
+            $arrayUsuario=[];
+            // Query de la consulta prepatrada
+            $query = "select foto from usuario where username=?";
+            // Ejecutamos la consulta preparada y la guardamos en el $resultSet
+            $resultSet=DBPDO::ejecutarConsulta($query,[$username]);
+
+            // Comprobamos cuantos usuarios se han devuelto
+            // Si la consulta devuelve null
+            if(!$resultSet)
+            {
+                return null;
+            }
+            if($resultSet->rowCount())
+            {
+                // Guardamos el objeto de cada fila en $usuario
+                $usuario = $resultSet->fetchObject();
+                return $usuario->foto;
+            }
+            // Devolvemos el array del usuario
+            //return $arrayUsuario;
+        }
+
         public static function validarUsuario($username, $password){
             // Inicializamos el $arrayUsuario
             $arrayUsuario=[];

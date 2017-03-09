@@ -106,6 +106,16 @@ class Usuario
     * @param String $password : Contraseña del usuario
     * @return array[String] : Array del usuario
     **/
+
+    public static function getFotoUsuario($username)
+    {
+        //Inicializamos objUsuario
+        $objUsuario = null;
+        //Consultamos que el usuario existe
+        $url = UsuarioPDO::getFotoUsuario($username);
+        return $url;
+    }
+    
     public static function validarUsuario($username,$password)
     {
         //Inicializamos objUsuario
