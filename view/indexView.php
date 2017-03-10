@@ -88,7 +88,7 @@ ob_start();
                         <img src="https://edubloxtutor.com/wp-content/uploads/2016/11/twitter-3-xxl.png" alt="twitter" height="40px" width="40px">
                     </div>-->
                     <div id="foto"><img src="webroot/img/user.png"></div>
-                    <div class="campo"><span class="flaticon-man-user"></span><input id="loginUsername" type="text" name="username" placeholder="Nombre de usuario"></div>
+                    <div class="campo"><span class="flaticon-man-user"></span><input id="loginUsername" type="text" pattern="/^[a-zA-Z0-9]+$/" name="username" placeholder="Nombre de usuario"></div>
                     <br>
                     <div class="campo"><span class="flaticon-padlock"></span><input type="password" name="password" placeholder="Contraseña"></div>
                     <br>
