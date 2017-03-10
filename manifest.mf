@@ -1,0 +1,6 @@
+CACHE MANIFEST
+# v1 2017/03/10
+http://192.168.20.18/index.php
+http://192.168.20.18/view/indexView.php
+http://192.168.20.18/webroot/font/flaticon.css
+http://192.168.20.18/webroot/css/indexView.min.css

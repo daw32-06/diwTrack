@@ -2,7 +2,7 @@
 ob_start();
 ?>
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" manifest="manifest.mf">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -117,7 +117,7 @@ ob_start();
                         <div class="campos">
 
                             <p><b>Paso 1:</b> Cuéntanos algo sobre tí</p>
-                            <div class="campo"><span class="flaticon-man-user"></span><input type="text" name="usuario" placeholder="Nombre de usuario"></div>
+                            <div class="campo"><span class="flaticon-man-user"></span><input type="text" name="usuario" pattern="/^[a-zA-Z0-9]+$/" placeholder="Nombre de usuario"></div>
                             <br>
                             <div class="campo"><span class="flaticon-padlock"></span><input type="password" name="password" placeholder="Contraseña"></div>
                             <br>

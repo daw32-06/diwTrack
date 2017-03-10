@@ -1,0 +1,9 @@
+{
+    "name": "DiwTrack",
+    "description": "Proyecto integrador DAW32",
+    "developer": {
+        "name": "DiwTrack",
+        "url": "http://192.168.20.18/DAW206/public_html/diw/diwTrack/"
+    },
+    "default_locale": "es"
+}
